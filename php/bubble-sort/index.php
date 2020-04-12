@@ -1,8 +1,5 @@
 <?php
 
-$arr = [15, 5, 1, 4, 1];
-//$arr = [1, 2, 3, 4, 5];
-
 function bubble_sort($arr) {
 	for ($i = 0; $i < count($arr) - 1; $i++) {
 		$flag = false;
@@ -20,17 +17,14 @@ function bubble_sort($arr) {
 
 
 //$sorted = bubble_sort($arr);
-//debug(bubble_sort($arr));
 
 $nums = range(1, 1000);
 shuffle($nums); // перемегиваем
 
 $start = microtime(true);
-
 //sort($nums); // 0.000379
 bubble_sort($nums); // 0.127959
 $time = round(microtime(true) - $start, 6); // 0.000026
-
 echo "<p><b>Time: </b> $time</p>";
 
 
