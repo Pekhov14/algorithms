@@ -55,7 +55,7 @@ echo "<p><b>Time: </b> $time</p>";
  *
  * 4) start = 26, final = 36
  *    half = (int)((26 + 36) / 2) = 31
- *    31 > 27 ? final = 30 - 1
+ *    31 > 27 ? final = 31 - 1
  *
  * 5) start = 26, final = 30
  *    half = (int)((26 + 30) / 2) = 28
